@@ -1,4 +1,4 @@
-FROM debian:7
+FROM debian:jessie
 MAINTAINER Rafael Römhild <rafael@roemhild.de>
 
 ENV EJABBERD_BRANCH 15.04
