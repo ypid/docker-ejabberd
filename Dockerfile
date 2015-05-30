@@ -1,4 +1,4 @@
-FROM debian:7
+FROM debian:jessie
 MAINTAINER Rafael Römhild <rafael@roemhild.de>
 
 ENV EJABBERD_BRANCH 15.04
@@ -53,7 +53,7 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US.UTF-8
 
 # Install erlang
-RUN echo 'deb http://packages.erlang-solutions.com/debian wheezy contrib' >> /etc/apt/sources.list \
+RUN echo 'deb http://packages.erlang-solutions.com/debian jessie contrib' >> /etc/apt/sources.list \
     && curl --silent --output /tmp/erlang_solutions.asc -L "http://packages.erlang-solutions.com/debian/erlang_solutions.asc" \
     && apt-key add /tmp/erlang_solutions.asc \
     && apt-get update \
