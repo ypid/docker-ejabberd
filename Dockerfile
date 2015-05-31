@@ -53,7 +53,7 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US.UTF-8
 
 # Install erlang
-RUN echo 'deb http://packages.erlang-solutions.com/debian wheezy contrib' >> /etc/apt/sources.list \
+RUN echo 'deb http://packages.erlang-solutions.com/debian jessie contrib' >> /etc/apt/sources.list \
     && apt-key adv --keyserver keys.gnupg.net --recv-keys 434975BD900CCBE4F7EE1B1ED208507CA14F4FCA \
     && apt-get update \
     && apt-get -y --no-install-recommends install erlang-base \
